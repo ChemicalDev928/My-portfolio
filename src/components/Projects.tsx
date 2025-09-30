@@ -7,7 +7,7 @@ const Projects = () => {
     {
       title: "Design",
       description:
-        "A full-featured e-commerce platform with cart management, payment integration, and admin dashboard.",
+        "This project based on the html.",
       tags: ["React", "TypeScript", "Tailwind CSS", "Stripe"],
       image: "https://images.unsplash.com/photo-1661956602116-aa6865609028?w=800&q=80",
       link: "http://design-xi-three.vercel.app"
@@ -15,21 +15,23 @@ const Projects = () => {
     {
       title: "Task Management App",
       description:
-        "Collaborative task management tool with real-time updates, team features, and analytics.",
+        "This project based on the Next.js.",
       tags: ["Next.js", "PostgreSQL", "WebSocket", "Tailwind"],
       image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&q=80",
+      link: "https://task-management-ruby-six.vercel.app"
     },
     {
-      title: "Portfolio Website",
+      title: "E-shop",
       description:
-        "Modern, responsive portfolio website with smooth animations and optimized performance.",
+        "This project based on the React.js.",
       tags: ["React", "Framer Motion", "Vite", "CSS"],
       image: "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?w=800&q=80",
+      link:"https://e-shop-with-react.vercel.app"
     },
     {
-      title: "Fitness Tracker",
+      title: "Market site",
       description:
-        "Comprehensive fitness tracking app with workout logs, progress charts, and goal setting.",
+        "This project based on the Vue.js.",
       tags: ["React Native", "TypeScript", "Charts", "Firebase"],
       image: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800&q=80",
     },
