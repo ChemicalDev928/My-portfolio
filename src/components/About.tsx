@@ -24,11 +24,16 @@ const About = () => {
     <section id="about" className="py-20 bg-gradient-to-b from-background to-secondary/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-4">About Me</h2>
-            <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-              Passionate about creating digital experiences that make a difference
-            </p>
+          <div className=" flex justify-around text-center mb-16 animate-fade-in">
+            <div>
+              <img className=" rounded-[50%] w-[200px] " src="/avatar.jpg" />
+            </div>
+            <div className=" m-auto " >
+              <h2 className="text-4xl sm:text-5xl font-bold mb-4">About Me</h2>
+              <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
+                Passionate about creating digital experiences that make a difference
+              </p>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 mb-16">

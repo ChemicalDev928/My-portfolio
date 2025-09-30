@@ -31,19 +31,22 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={` bg-white fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? "bg-card/80 backdrop-blur-lg shadow-sm border-b border-border"
           : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex m-[20px] items-center justify-between h-16">
           <button
             onClick={() => scrollToSection("hero")}
-            className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+            className=" flex text-xl gap-5 font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent hover:opacity-80 transition-opacity"
           >
-            Portfolio
+            <img className=" rounded-[50%] w-[60px] " src="/avatar.jpg" />
+            <div className="flex m-auto " >
+              Portfolio
+            </div>
           </button>
 
           {/* Desktop Navigation */}

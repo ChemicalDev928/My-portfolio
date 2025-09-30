@@ -5,11 +5,12 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "Design",
       description:
         "A full-featured e-commerce platform with cart management, payment integration, and admin dashboard.",
       tags: ["React", "TypeScript", "Tailwind CSS", "Stripe"],
       image: "https://images.unsplash.com/photo-1661956602116-aa6865609028?w=800&q=80",
+      link: "http://design-xi-three.vercel.app"
     },
     {
       title: "Task Management App",
@@ -24,20 +25,6 @@ const Projects = () => {
         "Modern, responsive portfolio website with smooth animations and optimized performance.",
       tags: ["React", "Framer Motion", "Vite", "CSS"],
       image: "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?w=800&q=80",
-    },
-    {
-      title: "Weather Dashboard",
-      description:
-        "Real-time weather dashboard with forecasts, interactive maps, and location-based services.",
-      tags: ["React", "API Integration", "Charts", "Geolocation"],
-      image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&q=80",
-    },
-    {
-      title: "Social Media App",
-      description:
-        "Feature-rich social media platform with posts, comments, likes, and user profiles.",
-      tags: ["React", "Node.js", "MongoDB", "Socket.io"],
-      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80",
     },
     {
       title: "Fitness Tracker",
@@ -73,14 +60,16 @@ const Projects = () => {
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-card/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4 gap-4">
-                    <Button size="sm" variant="secondary" className="shadow-lg">
+                    {/* <Button size="sm" variant="secondary" className="shadow-lg">
                       <Github className="h-4 w-4 mr-2" />
                       Code
-                    </Button>
-                    <Button size="sm" className="shadow-lg bg-primary">
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Live
-                    </Button>
+                    </Button> */}
+                    <a href={project.link?project.link:""} >
+                      <Button size="sm" className="shadow-lg bg-primary">
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Live
+                      </Button>
+                    </a>
                   </div>
                 </div>
                 <div className="p-6">
